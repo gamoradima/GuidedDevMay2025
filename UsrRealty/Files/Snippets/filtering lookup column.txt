@@ -1,0 +1,36 @@
+https://customerfx.com/article/dynamically-filtering-a-lookup-on-a-creatio-freedom-ui-page/
+Written by Ryan Farley from CustomerFX.com
+
+
+define("UsrCars_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
+...
+
+{
+    request: "crt.LoadDataRequest",
+    handler: async (request, next) => {
+        // filter the contact lookup for the account
+                     
+        if(request.dataSourceName !== "LookupAttribute_ctwt6pv_List_DS") {
+            return await next?.handle(request);
+        }
+ 
+        // get the account                  
+        const account = await request.$context.LookupAttribute_c08bwtk;
+        if (account) {
+            const filter = new sdk.FilterGroup();
+            await filter.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "Account", account.value);
+ 
+            // note, these lines are only needed due to an issue with filters in Creatio-DevKit SDK
+            // expected to be fixed in Creatio 8.1
+            const newFilter = Object.assign({}, filter);
+            newFilter.items = filter.items;
+ 
+            request.parameters.push({
+                type: "filter",
+                value: newFilter
+            });
+        }
+                     
+        return await next?.handle(request);
+    }
+}

@@ -1,0 +1,17 @@
+
+
+https://customerfx.com/article/sorting-a-dropdown-lookup-on-a-creatio-freedom-ui-page/
+
+
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+			    request: "crt.HandleViewModelInitRequest",
+			    handler: async (request, next) => {
+			        const sortConfig = await request.$context.PDS_UsrType_f3p6zs6_List_Sorting;
+			        const firstSort = sortConfig[0];
+			        firstSort.columnName = "UsrPosition";
+			        firstSort.direction = "asc";
+			        return next?.handle(request);
+			    }
+			}
+		]/**SCHEMA_HANDLERS*/,

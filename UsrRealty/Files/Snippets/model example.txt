@@ -1,0 +1,29 @@
+
+
+			{
+				request: "crt.HandleViewModelInitRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+    				console.log("Init request!");
+
+					const carsModel = await sdk.Model.create("UsrCars");
+
+					const filters = new sdk.FilterGroup();
+					const truckBodyTypeId = "835f9323-6bea-40a3-99c6-ddf8cf7f908e";
+					await filters.addSchemaColumnFilterWithParameter(sdk.ComparisonType.Equal, "UsrBodyType", truckBodyTypeId);
+					const newFilters = Object.assign({}, filters);
+					newFilters.items = filters.items;
+					const cars = await carsModel.load({
+						attributes: ["Id"],
+						parameters: [{
+							type: sdk.ModelParameterType.Filter,
+							value: newFilters
+						}]
+					});
+					request.$context.CurrentNumber = cars.length;
+					console.log("cars.length = " + cars.length);
+
+                  
+					return next?.handle(request);
+				}
+			},

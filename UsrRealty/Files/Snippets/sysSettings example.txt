@@ -1,0 +1,5 @@
+
+
+					const sysSettingsService = new sdk.SysSettingsService();
+					const demoSetting = await sysSettingsService.getByCode('DemoURL');
+					console.log("DemoURL System setting value  = " + demoSetting.value);

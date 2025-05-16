@@ -1,0 +1,39 @@
+
+			{
+				"operation": "insert",
+				"name": "Button_edppvdt",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_edppvdt_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "large",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "usr.PushButtonRequest"
+					},
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_baxnbid",
+				"propertyName": "items",
+				"index": 0
+			},
+
+
+
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "usr.PushButtonRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					console.log("Button works...");
+					Terrasoft.showInformation("My button was pressed.");
+					var price = await request.$context.PDS_UsrPriceUSD_o6qqcz6;
+					console.log("Price = " + price);
+					request.$context.PDS_UsrArea_glmjgg6 = price * 0.2;
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+		]/**SCHEMA_HANDLERS*/,

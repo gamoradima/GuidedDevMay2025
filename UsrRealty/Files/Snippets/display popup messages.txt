@@ -1,0 +1,10 @@
+
+Loc string:
+PickupNumberMessage
+Pickups count should not exceed {0} items in the database
+...
+
+
+
+						 const warningMsg = await request.$context.Resources.Strings.PickupNumberMessage;
+						 Terrasoft.showInformation(Ext.String.format(warningMsg, maxNumber));
