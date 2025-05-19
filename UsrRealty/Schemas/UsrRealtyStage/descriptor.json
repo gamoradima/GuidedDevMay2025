@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "e206ada9-b704-446f-ad78-d5220ab6a703",
+    "Name": "UsrRealtyStage",
+    "ModifiedOnUtc": "\/Date(1747644963000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty stage",
+    "DependsOn": []
+  }
+}

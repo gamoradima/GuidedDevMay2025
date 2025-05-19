@@ -3,11 +3,25 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty form page" />
+			<Item Name="LocalizableStrings.addRecord_40qhqo3_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_5h7a3od_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_9lsr1yv_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_d3wxi5o_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_dyhfal6_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_evdbkc8_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_hljelbg_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_oy6iy8v_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_z2nbl10_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be less than 100 sq ft" />
+			<Item Name="LocalizableStrings.Button_1sppkq5_caption.Value" Value="L1 menu" />
+			<Item Name="LocalizableStrings.Button_fqr3nux_caption.Value" Value="L2 menu" />
+			<Item Name="LocalizableStrings.DateMustBeGreaterThanTodayDate.Value" Value="Deadline date must be greater than today date" />
+			<Item Name="LocalizableStrings.MenuItem_3yd4vgd_caption.Value" Value="L2.1 item" />
+			<Item Name="LocalizableStrings.MenuItem_4dncs1o_caption.Value" Value="L1.1 item" />
+			<Item Name="LocalizableStrings.MenuItem_uvc0bo9_caption.Value" Value="L1.2 item" />
+			<Item Name="LocalizableStrings.MenuItem_xg9hs5a_caption.Value" Value="L2.2" />
+			<Item Name="LocalizableStrings.NumberInput_jvje06z_label.Value" Value="Number" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0 USD" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push me!" />
 		</Items>
 	</Group>

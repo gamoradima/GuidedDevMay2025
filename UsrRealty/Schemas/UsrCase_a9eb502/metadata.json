@@ -1,0 +1,100 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "DcmSchemaManager",
+      "UId": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+      "A2": "UsrCase_a9eb502",
+      "A5": "b346bd16-b453-47b0-b1f2-adc845be51a7",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "2f178cfb-b158-4c8c-8dad-928597e7087c",
+      "B8": "8.2.3.1351",
+      "FJ1": [],
+      "IJ1": true,
+      "BK8": "51b280eb-d8a3-4932-81b9-ef61a0877aab",
+      "IJ10": true,
+      "EntitySchemaUId": "4c9dbdc3-06c8-4c32-866a-a9ca7a6989aa",
+      "BK15": [],
+      "BK37": {
+        "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+        "UId": "cdd58be7-2dba-4a5e-869b-1ad5d6d7513a",
+        "A2": "NotificationCaption",
+        "A3": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+        "A4": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+        "L1": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2",
+        "L8": {
+          "GS1": 3,
+          "GS2": "[#[PropertyValue:Caption]#]"
+        }
+      },
+      "Stages": [
+        {
+          "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
+          "UId": "7c3c80c8-aa68-49bd-b5df-a4cbbcc4c7f4",
+          "A2": "Stage1",
+          "A3": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A4": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A5": "2f178cfb-b158-4c8c-8dad-928597e7087c",
+          "Color": "#B41406",
+          "StageRecordId": "950339b0-c425-4b2d-adc1-0c0641438c10",
+          "Elements": []
+        },
+        {
+          "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
+          "UId": "29ce2ff3-590c-4e21-99e5-a9af798d7923",
+          "A2": "Stage2",
+          "A3": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A4": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A5": "2f178cfb-b158-4c8c-8dad-928597e7087c",
+          "Color": "#B41406",
+          "StageRecordId": "ce1fe49a-8f5a-437f-89d6-2fb3acb8a533",
+          "Elements": []
+        },
+        {
+          "BL1": "Terrasoft.Core.DcmProcess.DcmSchemaStage",
+          "UId": "33203b38-a4ab-4d13-a6b4-bc671360ff12",
+          "A2": "Stage3",
+          "A3": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A4": "2e016de6-7502-4ba2-b916-80315d7a3a00",
+          "A5": "2f178cfb-b158-4c8c-8dad-928597e7087c",
+          "Color": "#B41406",
+          "StageRecordId": "b874e50f-e162-4f00-a738-5cba6308a317",
+          "Elements": []
+        }
+      ],
+      "Transitions": [],
+      "StageConnections": {
+        "Connections": [
+          {
+            "Source": "29ce2ff3-590c-4e21-99e5-a9af798d7923",
+            "Target": "7c3c80c8-aa68-49bd-b5df-a4cbbcc4c7f4"
+          },
+          {
+            "Source": "7c3c80c8-aa68-49bd-b5df-a4cbbcc4c7f4",
+            "Target": "29ce2ff3-590c-4e21-99e5-a9af798d7923"
+          },
+          {
+            "Source": "33203b38-a4ab-4d13-a6b4-bc671360ff12",
+            "Target": "7c3c80c8-aa68-49bd-b5df-a4cbbcc4c7f4"
+          },
+          {
+            "Source": "7c3c80c8-aa68-49bd-b5df-a4cbbcc4c7f4",
+            "Target": "33203b38-a4ab-4d13-a6b4-bc671360ff12"
+          },
+          {
+            "Source": "33203b38-a4ab-4d13-a6b4-bc671360ff12",
+            "Target": "29ce2ff3-590c-4e21-99e5-a9af798d7923"
+          },
+          {
+            "Source": "29ce2ff3-590c-4e21-99e5-a9af798d7923",
+            "Target": "33203b38-a4ab-4d13-a6b4-bc671360ff12"
+          }
+        ]
+      },
+      "StageColumnUId": "5802c4f9-9b39-87b3-7d16-14c8c710f1ee",
+      "Filters": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{\"e614adc4-c33b-5146-f86f-0c935dbb4f73\":{\"className\":\"Terrasoft.InFilter\",\"filterType\":4,\"comparisonType\":3,\"isEnabled\":true,\"trimDateTimeParameterToDate\":false,\"leftExpression\":{\"className\":\"Terrasoft.ColumnExpression\",\"expressionType\":0,\"columnPath\":\"UsrType\"},\"isAggregative\":false,\"key\":\"e614adc4-c33b-5146-f86f-0c935dbb4f73\",\"dataValueType\":10,\"leftExpressionCaption\":\"Type\",\"referenceSchemaName\":\"UsrRealtyType\",\"rightExpressions\":[{\"className\":\"Terrasoft.ParameterExpression\",\"expressionType\":2,\"parameter\":{\"className\":\"Terrasoft.Parameter\",\"dataValueType\":10,\"value\":{\"Name\":\"1. House\",\"Id\":\"590b700c-639f-46a1-8ee5-cf1f9041aebe\",\"value\":\"590b700c-639f-46a1-8ee5-cf1f9041aebe\",\"displayValue\":\"1. House\"}}}]}},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"rootSchemaName\":\"UsrRealty\",\"key\":\"\"}",
+      "SystemElements": []
+    }
+  }
+}

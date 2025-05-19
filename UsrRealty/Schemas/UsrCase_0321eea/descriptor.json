@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "6ad55fb1-6cf8-4f3e-a226-ce027c28f7ce",
+    "Name": "UsrCase_0321eea",
+    "ModifiedOnUtc": "\/Date(1747645637000)\/",
+    "ManagerName": "DcmSchemaManager",
+    "Caption": "Case 2 Loan",
+    "DependsOn": []
+  }
+}

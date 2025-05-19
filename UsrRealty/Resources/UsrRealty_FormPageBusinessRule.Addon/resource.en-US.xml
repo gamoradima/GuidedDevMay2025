@@ -2,6 +2,8 @@
 <Resources Culture="en-US">
 	<Group Type="String">
 		<Items>
+			<Item Name="AddonConfig.Rules.3d336d21-35de-dd2d-f028-2fa76bc1de47.Caption" Value="Show elements: L1 menu" />
+			<Item Name="AddonConfig.Rules.94d3d5c2-d1e4-a72a-dc11-f97539cdc95e.Caption" Value="Show elements: L2 menu" />
 			<Item Name="AddonConfig.Rules.f95c077f-12ab-9efd-f077-eb2177f2d828.Caption" Value="Show elements: Comment" />
 			<Item Name="AddonConfig.Rules.fce08969-29ea-5923-31b5-6dd5a9b156cd.Caption" Value="Show elements: Commission, USD" />
 			<Item Name="Caption" Value="Realty form page (Business rules)" />
