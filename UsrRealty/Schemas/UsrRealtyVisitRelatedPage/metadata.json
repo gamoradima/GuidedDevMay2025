@@ -1,0 +1,35 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "e4ab7beb-ee6a-48ea-b960-d2da043dfa75",
+      "A2": "UsrRealtyVisitRelatedPage",
+      "A5": "b346bd16-b453-47b0-b1f2-adc845be51a7",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "2f178cfb-b158-4c8c-8dad-928597e7087c",
+      "B8": "8.2.3.1351",
+      "AD1": "9a483420-e7eb-4eb1-a544-1af2cf42e3c8",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "5ff6f84c-eea9-7f14-1249-85e2ee9f886d",
+      "PageSchemaUId": "837bd5d7-1e4f-42ea-88cb-8de5bccd4acb",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": false
+      },
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+      "TypeColumnValue": null
+    }
+  ],
+  "TypeColumnUId": null
+}
+    }
+  }
+}
