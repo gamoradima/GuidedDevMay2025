@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "cceba581-6ca5-40d0-8ec8-1dfea9a132c1",
+    "Name": "UsrDecimalOutputPage",
+    "ModifiedOnUtc": "\/Date(1747837504000)\/",
+    "Parent": {
+      "UId": "27e1b215-163a-4b82-b0a6-9872a8dde6e4",
+      "Name": "PageWithTopAreaAndTabsFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Decimal output page"
+  }
+}

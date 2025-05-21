@@ -1236,11 +1236,25 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						} else {
 							request.$context.MyManagerVisibleAttribute = false;
 						}
+					};
+      				if (request.attributeName === 'UsrName'|| 
+							request.attributeName === "PDS_UsrNumber_u9vhwz5") {
+						var name = await request.$context.UsrName;
+						var number = await request.$context.PDS_UsrNumber_u9vhwz5;
+						request.$context.HeaderCaption = name + " " + number;
 					}
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
-			}
+			},
+			{
+				request: "crt.HandleViewModelResumeRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					console.log("Resume works...");
+					return next?.handle(request);
+				}
+			},
 
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
