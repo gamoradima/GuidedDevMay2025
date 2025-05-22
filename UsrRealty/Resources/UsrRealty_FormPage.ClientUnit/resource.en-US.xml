@@ -32,6 +32,7 @@
 			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50.0 USD" />
 			<Item Name="LocalizableStrings.PushMeButton_caption.Value" Value="Push me!" />
 			<Item Name="LocalizableStrings.RunAvgPriceProcessMenuItem_caption.Value" Value="Calculate average realty price process" />
+			<Item Name="LocalizableStrings.RunMaxPriceWebServiceMenuItem_caption.Value" Value="Run max price web service" />
 		</Items>
 	</Group>
 </Resources>
