@@ -280,11 +280,30 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 			},
 			{
 				"operation": "insert",
-				"name": "Area",
+				"name": "Price2",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"row": 3,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrPrice_n09w355",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrPrice_n09w355"
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Area",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 4,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
@@ -295,7 +314,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -303,7 +322,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 4,
+						"row": 5,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
@@ -318,7 +337,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -1145,6 +1164,11 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 								}
 							}
 						}
+					},
+					"PDS_UsrPrice_n09w355": {
+						"modelConfig": {
+							"path": "PDS.UsrPrice"
+						}
 					}
 				}
 			},
@@ -1254,7 +1278,7 @@ define("UsrRealty_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA
 						}
 					};
       				if (request.attributeName === 'UsrName'|| 
-							request.attributeName === "PDS_UsrNumber_u9vhwz5") {
+							request.attributeName === "PDS_UsrNumber_u9vhwz5")  {
 						var name = await request.$context.UsrName;
 						var number = await request.$context.PDS_UsrNumber_u9vhwz5;
 						request.$context.HeaderCaption = name + " " + number;

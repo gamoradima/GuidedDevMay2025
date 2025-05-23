@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "9dc1d2ee-ca5d-42d7-b23b-5d87b76f3bbb",
+    "Name": "UsrGetEUCompaniesDataMainProcess",
+    "ModifiedOnUtc": "\/Date(1748016316000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Get EU companies data main process",
+    "DependsOn": []
+  }
+}

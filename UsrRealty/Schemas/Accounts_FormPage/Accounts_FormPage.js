@@ -14,6 +14,10 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "remove",
+				"name": "EmployeesNumber"
+			},
+			{
+				"operation": "remove",
 				"name": "AddressSearchFilter",
 				"properties": [
 					"targetAttributes"
@@ -94,6 +98,26 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				"parentName": "AccountInfoFieldsContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "Input_ahawr95",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"multiline": false,
+					"label": "$Resources.Strings.PDS_Code_gwlye6s",
+					"labelPosition": "auto",
+					"control": "$PDS_Code_gwlye6s"
+				},
+				"parentName": "AccountInfoFieldsContainer",
+				"propertyName": "items",
+				"index": 3
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -106,6 +130,11 @@ define("Accounts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS_UsrWebsiteCode_gcjb1pz": {
 						"modelConfig": {
 							"path": "PDS.UsrWebsiteCode"
+						}
+					},
+					"PDS_Code_gwlye6s": {
+						"modelConfig": {
+							"path": "PDS.Code"
 						}
 					}
 				}
